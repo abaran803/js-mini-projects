@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(104, 200, 255);
+}
+
+#title {
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    font-size: 65px;
+    text-align: center;
+    color: rgb(235, 235, 72);
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;;
+}
+
+#homepage > a {
+    color: rgb(235, 235, 72);
+}
+
+#homepage {
+    margin: 20px;
+}
+
+.pages {
+    width: 32%;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(43, 47, 73);
+}
+
+.form {
+    border: 0.1px solid white;
+    border-radius: 10px;
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .form-title {
+    margin-bottom: 8px;
+}
+
+.form input, select {
+    width: 22rem;
+    height: 2rem;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.quiz {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 2.2rem;
+}
+
+#one-submit-button {
+    width: 22rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-button {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(235, 235, 72);
+}
+
+button.submit {
+    background-color: lightgreen;
+}
+
+textarea {
+    width: 22rem;
+    border: none;
+    resize: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

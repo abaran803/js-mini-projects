@@ -1,0 +1,171 @@
+/* ----------------------------------------------Global--------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 84%;
+    margin: auto;
+    background-color: skyblue;
+}
+
+/* ---------------------x------------------------Global--------------------------x------------------------ */
+
+/* ----------------------------------------------Title--------------------------------------------------- */
+
+#title {
+    margin-top: 12vh;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 65px;
+    text-align: center;
+    color: rgb(235, 235, 72);
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;;
+}
+
+/* ---------------------x------------------------Title-------------------------------x------------------- */
+
+/* ---------------------------------------------First Block----------------------------------------------- */
+
+#items {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---------------------------------------------First Block----------------------------------------------- */
+
+.left-side, .right-side {
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side:hover {
+    opacity: 1;
+}
+
+.right-side:hover {
+    opacity: 1;
+}
+
+#item1 {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.item {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 12vh;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.item:nth-of-type(odd) {
+    color: rgb(43, 47, 73);
+    background-color: rgb(235, 235, 72);
+}
+
+.item:nth-of-type(even) {
+    color: rgb(235, 235, 72);
+    background-color: rgb(43, 47, 73);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.select-title {
+    font-size: 32px;
+    margin-top: 8vh;
+}
+
+#colours {
+    width: 80%;
+    margin: auto;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.colour {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 6px solid black;
+}
+
+#colour1 {
+    background-color: yellow;
+}
+#colour2 {
+    background-color: green;
+}
+#colour3 {
+    background-color: red;
+}
+
+#item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle {
+    width: 250px;
+    height: 250px;
+    display: none;
+    border-radius: 50%;
+    border: 10px solid black;
+    background-color: red;
+}
+
+.boxes {
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+    display: none;
+    /* display: grid; */
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#eyes2 {
+    position: relative;
+    top: 20%;
+    color: black;
+    transform: scale(5,1.5);
+}
+
+#mouth2 {
+    position: relative;
+    color: black;
+    top: 55%;
+    transform: rotate(90deg) scale(2,3);
+}
+
+
+.box {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.box > pre {
+    margin-top: 4px;
+}
+
+.mouth > pre {
+    margin-top: 40px;
+    transform: rotate(90deg);
+}

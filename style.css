@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 72%;
+    margin: auto;
+    background-color: skyblue;
+}
+
+#title {
+    margin-top: 12vh;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 65px;
+    text-align: center;
+    color: rgb(235, 235, 72);
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;;
+}
+
+#items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    width: 16vw;
+    height: 34vh;
+    margin-top: 18vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.item div {
+    width: 13vw;
+    text-align: center;
+}
+
+.item:nth-of-type(odd) {
+    color: rgb(43, 47, 73);
+    background-color: rgb(235, 235, 72);
+}
+
+.item:nth-of-type(even) {
+    color: rgb(235, 235, 72);
+    background-color: rgb(43, 47, 73);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

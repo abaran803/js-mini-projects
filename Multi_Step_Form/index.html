@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="homepage">
+        <a href="#">Back to Home</a>
+    </div>
+    <div id="title">
+        The Multi-Step Form
+    </div>
+    <div class="pages">
+        <div class="form">
+            <label>
+                <div class="form-title">First Name* </div>
+                <input type="text">
+            </label> <br>
+            <label>
+                <div class="form-title">Last Name* </div>
+                <input type="text">
+            </label> <br>
+            <label>
+                <div class="form-title">Email* </div>
+                <input type="email">
+            </label>
+            <div id="one-submit-button">
+                <button onclick="showForm2()">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <div class="pages" style="display: none;">
+        <div class="form">
+            <label>
+                <div class="form-title">Contact * </div>
+                <input type="text">
+            </label> <br>
+            <label>
+                <div class="form-title">City </div>
+                <input type="text">
+            </label> <br>
+            <label>
+                <div class="form-title">Country * </div>
+                <input type="email">
+            </label>
+            <div class="submit-button">
+                <button onclick="showForm1()">PREVIOUS</button>
+                <button onclick="showForm3()">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <div class="pages" style="display: none;">
+        <div class="form">
+            <label>
+                <div class="form-title">Enrolled Program * </div>
+                <select>
+                    <option value="#">--Select Program--</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </label> <br> <br>
+            <label>
+                <div class="form-title">Message * </div>
+                <textarea cols="48" rows="7"></textarea>
+            </label>
+            <div class="submit-button">
+                <button onclick="showForm2()">PREVIOUS</button>
+                <button onclick="submitForm()" class="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
